@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Aria Voss — Product designer & creative director",
+      "hasCanvas": false,
+      "bodyTextLen": 2947,
+      "bodyTextHash": "f9af6c2646a8e323e11be7a5c8c3f67a076d09cd4502bd13b2df2fb3ada98f5a",
+      "bodyTextPrefix": "Skip to content Aria Voss Work About Skills Contact LISBON · EST",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Aria Voss — Product designer & creative director",
+      "hasCanvas": false,
+      "bodyTextLen": 3513,
+      "bodyTextHash": "fbad929ade1ec24443bec7ed8afb302950392c17cc035d47534064bdb12fcd78",
+      "bodyTextPrefix": "Skip to content Aria Voss LISBON · EST. 2016 VOL. 06 PRODUCT DES",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
