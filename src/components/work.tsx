@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import {
   categories,
   projects,
@@ -92,16 +93,13 @@ function ProjectCard({
   className?: string;
   priority?: boolean;
 }) {
-  const [revealed, setRevealed] = useState(false);
-
   return (
     <article className={cn("group", className)}>
-      <button
-        type="button"
-        className="relative block w-full overflow-hidden rounded-lg text-left"
-        aria-expanded={revealed}
+      <Link
+        to="/work/$projectId"
+        params={{ projectId: project.id }}
+        className="group relative block w-full overflow-hidden rounded-lg text-left"
         aria-label={`${project.title}: ${project.description}`}
-        onClick={() => setRevealed((value) => !value)}
       >
         <img
           src={project.image}
@@ -114,32 +112,37 @@ function ProjectCard({
         <div
           className={cn(
             "absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-ink/80 via-ink/35 to-transparent p-5 transition-opacity duration-300 ease-out md:p-6",
-            revealed
-              ? "opacity-100"
-              : "opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100",
+            "opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100",
           )}
         >
           <p className="max-w-md text-sm leading-relaxed text-paper md:text-base">
             {project.description}
           </p>
         </div>
-      </button>
-      <div className="mt-4 flex items-baseline justify-between gap-4">
-        <div>
-          <p className="text-xs font-medium uppercase tracking-caps text-clay">
-            {project.index} · {project.client}
+      </Link>
+      <Link
+        to="/work/$projectId"
+        params={{ projectId: project.id }}
+        className="block"
+        aria-label={`View ${project.title} case study`}
+      >
+        <div className="mt-4 flex items-baseline justify-between gap-4">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-caps text-clay">
+              {project.index} · {project.client}
+            </p>
+            <h3 className="mt-1 font-display text-2xl font-medium text-ink">
+              {project.title}
+            </h3>
+          </div>
+          <p className="shrink-0 text-sm text-clay">
+            {project.category} · {project.year}
           </p>
-          <h3 className="mt-1 font-display text-2xl font-medium text-ink">
-            {project.title}
-          </h3>
         </div>
-        <p className="shrink-0 text-sm text-clay">
-          {project.category} · {project.year}
+        <p className="mt-3 text-sm leading-relaxed text-clay md:hidden">
+          {project.description}
         </p>
-      </div>
-      <p className="mt-3 text-sm leading-relaxed text-clay md:hidden">
-        {project.description}
-      </p>
+      </Link>
     </article>
   );
 }

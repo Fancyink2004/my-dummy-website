@@ -13,6 +13,12 @@ export type Project = {
   image: string;
   description: string;
   span: "wide" | "narrow" | "half";
+  overview?: string;
+  challenge?: string;
+  approach?: string;
+  outcome?: string;
+  gallery?: string[];
+  video?: string | null;
 };
 
 export const person = {
@@ -36,6 +42,16 @@ export const projects: Project[] = [
     description:
       "A quiet identity for a Lisbon ceramics studio — marks, packaging, and a catalog printed on uncoated stock.",
     span: "wide",
+    overview:
+      "Atelier is a considered identity for a ceramics studio whose work is shaped by hand, heat, and time. The system gives the studio a calm, tactile presence across its packaging, catalog, and digital touchpoints.",
+    challenge:
+      "Casa Form needed to feel established without losing the warmth and irregularity that made its work human. The identity had to hold together across small labels, large-format print, and a growing body of makers' stories.",
+    approach:
+      "We built the system around a restrained wordmark, generous typography, and a palette drawn from clay, paper, and kiln ash. Uncoated stocks and close-up photography made the material quality part of every interaction.",
+    outcome:
+      "The studio launched with a flexible identity that made each collection feel distinct while keeping the overall practice recognisable and quietly confident.",
+    gallery: ["/images/atelier.jpg", "/images/studio.jpg"],
+    video: null,
   },
   {
     id: "northline",
@@ -48,6 +64,16 @@ export const projects: Project[] = [
     description:
       "Wayfinding and a passenger app for a new urban rail line. Fewer screens, clearer journeys.",
     span: "narrow",
+    overview:
+      "Northline is a wayfinding and product system for a new urban rail line connecting the northern edge of the city to its centre.",
+    challenge:
+      "Passengers needed to make quick decisions in unfamiliar stations, often while moving through a crowded environment. The physical and digital experiences had to speak the same visual language.",
+    approach:
+      "We reduced the interface to a small set of clear journey states, then carried those cues into station signage, maps, and service updates. High contrast and deliberate spacing kept information legible at a glance.",
+    outcome:
+      "Northline gave the network a consistent public face and helped passengers move from platform to destination with fewer moments of uncertainty.",
+    gallery: ["/images/northline.jpg", "/images/studio.jpg"],
+    video: null,
   },
   {
     id: "field-notes",
@@ -60,6 +86,16 @@ export const projects: Project[] = [
     description:
       "An online reading room for an independent journal. Type-led, issue-based, built to be read slowly.",
     span: "narrow",
+    overview:
+      "Field Notes is an online reading room for Quarterly, designed to give independent journalism the time and space it deserves.",
+    challenge:
+      "The journal had a strong print presence but its digital archive made long-form reading feel fragmented. The new site needed to support discovery without competing with the writing.",
+    approach:
+      "A type-led layout, issue-based navigation, and a measured rhythm of images and text turn the archive into a place to browse, settle in, and return to.",
+    outcome:
+      "The reading room made the journal's back catalogue easier to explore while preserving the slower, editorial character of the print edition.",
+    gallery: ["/images/fieldnotes.jpg", "/images/studio.jpg"],
+    video: null,
   },
   {
     id: "lumina",
@@ -72,6 +108,16 @@ export const projects: Project[] = [
     description:
       "Art direction and a campaign system for a family of sculptural pendants. Light as material, not decoration.",
     span: "wide",
+    overview:
+      "Lumina is an art direction and campaign system for a family of sculptural pendants made by Haus Light.",
+    challenge:
+      "The collection was visually rich, but its launch materials treated the fixtures as isolated products. Haus Light needed a world that could show how the pieces shape a room.",
+    approach:
+      "We photographed light as a physical material, pairing quiet interiors with a flexible campaign grammar of shadow, scale, and close detail.",
+    outcome:
+      "The resulting system works across launch films, print, and product pages, giving every fixture a sense of place without flattening its character.",
+    gallery: ["/images/lumina.jpg", "/images/studio.jpg"],
+    video: null,
   },
   {
     id: "harbor",
@@ -84,6 +130,16 @@ export const projects: Project[] = [
     description:
       "A wealth product for people who dislike finance apps. Calm surfaces, honest numbers, no theatre.",
     span: "half",
+    overview:
+      "Harbor is a wealth product for people who want a clearer relationship with their money and less performance from their tools.",
+    challenge:
+      "Most financial products make confidence feel like a visual effect. Tide Co. needed a product that could make complex information feel direct, calm, and useful.",
+    approach:
+      "We focused the experience on plain language, transparent numbers, and a small set of reassuring actions. The visual system keeps the interface warm without hiding its precision.",
+    outcome:
+      "Harbor gives customers a steadier daily view of their finances and a product language that earns trust through clarity.",
+    gallery: ["/images/harbor.jpg", "/images/studio.jpg"],
+    video: null,
   },
   {
     id: "meridian",
@@ -96,6 +152,16 @@ export const projects: Project[] = [
     description:
       "A project archive for an architecture practice. Large plates, sparse copy, nothing extra.",
     span: "half",
+    overview:
+      "Meridian is a project archive for an architecture practice that lets the work carry the conversation.",
+    challenge:
+      "The studio's previous archive was difficult to scan and gave every project the same weight. The new structure needed to make comparison easy while leaving room for atmosphere.",
+    approach:
+      "We designed large image plates, restrained project notes, and a simple index that lets visitors move between buildings without losing their place.",
+    outcome:
+      "The archive now feels like an extension of the studio: precise, spacious, and confident enough to leave some things unsaid.",
+    gallery: ["/images/meridian.jpg", "/images/studio.jpg"],
+    video: null,
   },
 ];
 
