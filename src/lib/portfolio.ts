@@ -51,7 +51,7 @@ export const projects: Project[] = [
     outcome:
       "The studio launched with a flexible identity that made each collection feel distinct while keeping the overall practice recognisable and quietly confident.",
     gallery: ["/images/atelier.jpg", "/images/studio.jpg"],
-    video: null,
+    video: "/videos/atelier.mp4",
   },
   {
     id: "northline",
