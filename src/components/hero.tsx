@@ -17,7 +17,7 @@ export function Hero() {
             {person.role}
           </p>
           <h1 className="animate-fade-up font-display text-display font-medium text-ink">
-            I design brands, products, and printed matter.
+            Ja bhai maa chuda
           </h1>
           <p
             className="animate-fade-up mt-6 max-w-xl text-lede text-clay"
